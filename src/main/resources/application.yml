@@ -1,0 +1,4 @@
+app:
+  od-say:
+    base-url: ${OD_SAY_BASE_URL}
+    api-key: ${OD_SAY_API_KEY}
