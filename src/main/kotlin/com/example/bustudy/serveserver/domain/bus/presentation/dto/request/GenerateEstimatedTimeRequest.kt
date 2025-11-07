@@ -22,7 +22,7 @@ data class GenerateEstimatedTimeRequest(
     val arrivalX: Double,
 
     @field:NotNull(message = "arrivalY(경도)는 필수 값입니다.")
-    @field:DecimalMin(value = "-180.0", message = "arrivalY(경도)는 -180 이상이어야 합니다.")
-    @field:DecimalMax(value = "180.0", message = "arrivalY(경도)는 180 이하여야 합니다.")
+    @field:DecimalMin(value = "-90.0", message = "arrivalY(위도)는 -90 이상이어야 합니다.")
+    @field:DecimalMax(value = "90.0", message = "arrivalY(위도)는 90 이하여야 합니다.")
     val arrivalY: Double
 )
